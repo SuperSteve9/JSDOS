@@ -24,7 +24,7 @@
         cycles: 1000,
         autolock: false,
     }).ready(function (fs, main) {
-      fs.extract("https://oregon-trail-games.supersteve9.repl.co/The-Oregon-Trail_DOS_EN.zip").then(function () {
+      fs.extract("Oregon Trail.zip").then(function () {
         main(["-c", "OREGON.EXE"]).then(function (ci) {
             window.ci = ci;
         });
